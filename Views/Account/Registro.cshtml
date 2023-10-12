@@ -1,0 +1,37 @@
+<form class="formm"  action='@Url.Action("GuardarUsuario", "Account")' onsubmit= "return validarContraseña()" method="post">
+    <p class="titlee">Register </p>
+        <div class="flexx">
+        <label>
+            <input class="inputt" type="text" name="UserName"  required>
+            <span>UserName</span>
+        </label>
+
+        <label>
+            <input class="inputt" type="text" name="Nombre" required>
+            <span>Nombre</span>
+        </label>
+    </div>  
+            
+     <label>
+        <input  class="inputt" type="text" name="Email"  required> 
+        <span>Email</span>
+    </label>
+        
+    <label>
+        <input class="inputt" type="int" name="Telefono"  required> 
+        <span>Telefono</span>
+    </label> 
+    <label>
+        <input class="inputt" type="password" name="Contraseña" id="contraseña"  required>
+        <span>Contraseña</span>
+    </label>
+     <label>
+        <input class="inputt" type="password" name="Contraseña" id="contraseña2"  required>
+        <span>Confirmar Contraseña</span>
+    </label>
+    <p class="inc1" id="incorrecta1"></p>
+    <p class="inc2" id="incorrecta2"></p>
+    
+    <button class="submitt" >Registrarme</button>
+    <p class="signinn">Ya tenes una cuenta ? <a href='@Url.Action("Login", "Account")'>Entrar</a> </p>
+</form>
